@@ -68,7 +68,7 @@ gulp.task('styles', () =>
 
 gulp.task('views', () => {
   gulp.src('src/index.pug')
-    .pipe(rename({ basename: 'efdebug' }))
+    .pipe(rename({ basename: 'debug' }))
     .pipe(pug({
       i18n: {
         locales: 'src/i18n/*.json',
@@ -97,8 +97,8 @@ gulp.task('views', () => {
 
 gulp.task('i18n', () =>
   gulp.src('src/i18n/*.json')
-    // .pipe(jsonTransform(data => `EF.globals.i18n = ${JSON.stringify(data, null, 2)};`)) // debug
-    .pipe(jsonTransform(data => `EF.globals.i18n = ${JSON.stringify(data)};`))
+    // .pipe(jsonTransform(data => `globals.i18n = ${JSON.stringify(data, null, 2)};`)) // debug
+    .pipe(jsonTransform(data => `globals.i18n = ${JSON.stringify(data)};`))
     .pipe(rename((path) => {
       path.dirname = path.basename; // eslint-disable-line  no-param-reassign
       path.basename = 'locale'; // eslint-disable-line  no-param-reassign
