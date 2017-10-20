@@ -1,0 +1,14 @@
+{
+  "marketCode": "we",
+  "head": {
+    "title": "Page title for WE",
+    "ogTitle": "Localized open graph title used on sharing",
+    "ogDescription": "Localized open graph description used on sharing",
+    "ogImage": "http://via.placeholder.com/350x150"
+  },
+  "homepage": {
+    "Sample title": "Sample title for WE",
+    "Sample subtitle": "Sample subtitle for WE",
+    "Sample image": "http://via.placeholder.com/350x150"
+  }
+}

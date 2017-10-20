@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title= $i18n.head.title
+    meta(property="og:title", content=$i18n.head.ogTitle)
+    meta(property="og:description", content=$i18n.head.ogDescription)
+    meta(property="og:image", content=$i18n.head.ogImage)
+
+    if debug
+      link(rel="stylesheet", href="../app.css")
+    else
+      link(rel="stylesheet", href="../app.min.css")
+  body
+    div#global-intern
+    div#footer-wrapper
+
+    script(type="text/javascript", src="locale.js")
+
+    if debug
+      script(type="text/javascript", src="../app.js")
+    else
+      script(type="text/javascript", src="../app.min.js")

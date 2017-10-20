@@ -1,0 +1,14 @@
+{
+  "marketCode": "it",
+  "head": {
+    "title": "Titolo pagina per IT",
+    "ogTitle": "og titolo",
+    "ogDescription": "og descrizione",
+    "ogImage": "http://via.placeholder.com/350x150"
+  },
+  "homepage": {
+    "Sample title": "Titolo di esempio in IT",
+    "Sample subtitle": "Sottotitolo di esempio",
+    "Sample image": "http://via.placeholder.com/350x150"
+  }
+}
